@@ -249,7 +249,7 @@
         retrieveFromStorage: retrieveFromStorage,
         settings: {
             botName: "basicBot",
-            language: "english",
+            language: "portuguese",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
@@ -272,11 +272,11 @@
             voteSkipLimit: 10,
             historySkip: false,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLeigh: 8,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            skipPosition: 3,
+            skipPosition: 1,
             skipReasons: [
                 ["theme", "This song does not fit the room theme. "],
                 ["op", "This song is on the OP list. "],
@@ -359,7 +359,7 @@
             newBlacklisted: [],
             newBlacklistedSongFunction: null,
             roulette: {
-                rouletteStatus: false,
+                rouletteStatus: true,
                 participants: [],
                 countdown: null,
                 startRoulette: function () {
