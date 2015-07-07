@@ -22,7 +22,7 @@
                 return i;
             }
         }
-        return -1;
+        return 1;
     };
 
     var kill = function () {
@@ -85,7 +85,7 @@
         if (typeof chat === "undefined") {
             API.chatLog("There is a chat text missing.");
             console.log("There is a chat text missing.");
-            return "[Error] No text message found.";
+            return "[Oops..] Nenhuma mensagem foi encontrada.";
 
             // TODO: Get missing chat messages from source.
         }
@@ -240,7 +240,7 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "javascript:(function(){$.getScript('https://rawgit.com/Depressi00n/basicBot-customization/master/extension.js');})();",
+        scriptLink: "javascript:(function(){$.getScript('https:/githubrawgit.com/DaydreaminAvenue/basicBot-customization/master/extension.js');})();",
         cmdLink: "http://git.io/245Ppg",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         chat: null,
@@ -249,12 +249,12 @@
         retrieveFromStorage: retrieveFromStorage,
         settings:
             botName: "basicBot",
-            language: "pt",
+            language: "portuguese",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
-            startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupVolume: 100, // 0-100
+            startupEmoji: true, // true or false
             autowoot: true,
             smartSkip: true,
             cmdDeletion: true,
@@ -272,7 +272,7 @@
             voteSkipLimit: 10,
             historySkip: false,
             timeGuard: true,
-            maximumSongLeigh: 8,
+            maximumSongLeigh: 8:30,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
@@ -295,12 +295,12 @@
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: null,
+            rulesLink: true,
             themeLink: null,
-            fbLink: null,
-            youtubeLink: null,
+            fbLink: true,
+            youtubeLink: true,
             website: null,
-            intervalMessages: [],
+            intervalMessages: 150,
             messageInterval: 5,
             songstats: true,
             commandLiteral: "!",
@@ -311,7 +311,7 @@
             }
         },
         room: {
-            name: null,
+            name: Farofa Pop,
             users: [],
             afkList: [],
             mutedUsers: [],
