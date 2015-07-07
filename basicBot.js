@@ -247,7 +247,7 @@
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
-        settings: {
+        settings:
             botName: "basicBot",
             language: "portuguese",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
